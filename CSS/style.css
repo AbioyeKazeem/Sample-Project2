@@ -1,0 +1,217 @@
+body {
+margin:0;
+/*background-image: url('../image/bck.jpg');*/
+background-attachment: scroll;
+background-position: right-top;
+width: 100%;
+height: 100vh;
+/* background-color: white; 
+/ *background-image:linear-gradient(white); */
+text-align: justify !important;
+font-family: "Open Sans";
+}
+* {
+    box-sizing: border-box;
+}
+
+.log, a {
+    color: white !important;
+    padding: 5px;
+    text-decoration: none;
+}
+
+img.client {
+    width: 100px;
+    height: 90px;
+    object-fit: fill;
+    margin-left: 110px;
+}
+h3,#cont {
+    text-align: center;
+    color: #2ac5ed;
+    margin: 10px;
+}
+
+.inquiry {
+    border-radius: 8px;
+    background-color: lavender;
+    padding: 20px;
+}
+.mar-btn{
+    margin-top: 7px;
+}
+.text-white{
+    font-size: 15px;
+}
+#inputfield{
+    color: #2077b5;
+}
+ .carousel-inner img {
+     width: 100%;
+     height: 35em;  /* This part removing the strech height of the image */
+    object-fit: cover; /* This part removing the strech height of the image */
+        object-fit: cover;
+    overflow: hidden; /* Cuts off the parts of the image poking out */
+ }
+ #banner {
+     padding-top: 3px;
+ }
+
+ #section{
+     padding-top: 40px;
+     padding-bottom: 40px;
+ }
+
+#section1 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-family: "Open Sans";
+}
+
+ .img-styling{
+width: 1400px !important;
+height: 455px !important;
+background-size: cover;
+color:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+ }
+
+ .caption-words{
+    
+    font-weight: bold;
+ }
+span.prod{
+    text-align:justify;
+    font-size:15px;
+    margin-left: -5px;
+}
+ 
+.product-caption{
+    font-size: 15px;
+    font-weight:bolder;
+}
+
+/*  Not useful again
+.learn{
+    color:white !important;
+    text-decoration: none !important;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+}
+*/
+
+/*
+h2.caption-style1{
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            //Fallback color 
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 70%;
+            padding-bottom: 110px;
+            text-align: left;
+        } 
+*/
+        p.caption-style2 {
+        position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            /* Fallback color */
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            text-align: left;
+         
+}
+
+div.protext{
+    font-family: "Open Sans";
+    text-align: left;
+}
+
+div.protext2{
+    font-family: "Open Sans ";
+    text-align: left;
+    }
+
+.proheadingtext{
+   color: #2ac5ed;
+   text-align: justify;
+   margin-left: 0px;
+   font-family: "Open Sans";
+   padding-top: 15px;
+ 
+}
+
+
+.propara {
+    text-align: justify;
+    margin-left: 0px;
+    font-size: 15px;
+    font-family: 'Open Sans';
+
+}
+
+
+a.readmore{
+        color: #2077b5 !important;
+        text-decoration: none !important;
+}
+
+.readlist{
+    padding-left: 1px !important;
+    text-align: justify;
+    font-size: 15px;
+  
+}
+
+.text-adj{
+    text-align: justify;
+    margin-left: -13px;
+    font-size: 15px;
+
+}
+
+.foot{
+    font-size: 15px;
+    font-family: "Open Sans";
+    text-decoration: none !important;
+}
+
+h1,h2,h3,h4,h5,h6,i{
+    font-family: "Open Sans"!;
+}
+.news{
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footstyle{
+    text-align: left !important;
+}
+.footer{
+    line-height: 10px !important;
+}
+
+#section-prod{
+    padding-bottom: 40px;
+    padding-top: 25px;
+}
+
+.Social{
+    font-size: 23px !important;
+    text-indent: -6px;
+}
+
+a.links{
+    color: white !important;
+}
+
+
+
+
+
+

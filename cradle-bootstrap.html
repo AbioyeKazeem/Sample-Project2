@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" >
+<link rel="stylesheet" href="CSS/style.css">
+    <title>Bootstrap demo</title>
+<!-- This maybe used for online purpose not offline (bootstrap css part)-->
+<!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+</head>
+<body>
+<!-- This maybe used for online purpose not offline (Javascript part)-->
+<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"crossorigin="anonymous"></script-->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<!-- navbar starts here -->
+<nav class="navbar navbar-expand-sm navbar-info bg-info">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color:white ;">
+            <img src="../Sample-Project2/Image/cradlelogo.png" alt="cradlelogo" width="80%">
+         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse container" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/aboutus.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mission" id="#mission">Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Sample-Project2/pages/services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Sample-Project2/pages/portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Sample-Project2/pages/contact.html" >Contact</a>
+                </li>
+            </ul>
+            <form >
+                <span  class=" me-2 log" ><a href="" alt=""> Login</a></span>
+
+                <!--button class="btn btn-light" type="button" data-toggle="modal" data-target="#myModal" >Sign Up</button-->
+    
+    <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal">
+            Sign Up
+        </button>
+        
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+        
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="inputfield">Registration Form</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    <!--Your responsive form here-->
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="fname" id="inputfield">Firstname</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your first name" name="fname">
+                            <label for="lname" id="inputfield">Lastname</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter your last name" name="lname">
+                            <label for="email" id="inputfield">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                            <label for="phone" id="inputfield">Phone Number</label>
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Enter your phone number">
+                            <label for="pwd" id="inputfield">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                            <label for="confpwd" id="inputfield">Confirm Password</label>
+                            <input type="text" name="confpwd" id="confpwd" class="form-control" placeholder="Confirm your password">
+                        </div>
+                    </form>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">
+                            Submit
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!--Modal form ends here-->
+
+            </form>
+        </div>
+    </div>
+</nav>
+<!--Navbar ends here-->
+
+
+<!--Banner in form of Caroussel starts here-->
+<div id="banner" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators" style="display:none ;">
+        <li data-target="#banner" data-slide-to="0" class="active"></li>
+        <li data-target="#banner" data-slide-to="1"></li>
+        <li data-target="#banner" data-slide-to="2"></li>
+        <li data-target="#banner" data-slide-to="3"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../Sample-Project2/Image/consult.jpg" alt="consulting"  class="img-styling" >
+
+            <div class="carousel-caption" style="position: absolute;right: 3%;bottom: 20px;left: 3%; z-index: 10;padding-top: 20px;padding-bottom:20px;color: #fff;text-align: center;">
+                <p class="caption-style2 ">
+                    <span  style="font-weight:bolder; font-size:30px;">CONSULTING</span> <br>
+                    Leverage our experienced resources to handle the design and implementation of an enterprise-wide IT framework
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../Sample-Project2/Image/oilngas.jpg" alt="Oil and Gas" class="img-styling">
+             
+            <div class="carousel-caption" style="position: absolute;right: 3%;bottom: 20px;left: 3%; z-index: 10;padding-top: 20px;padding-bottom:20px;color: #fff;text-align: center;">
+                <p class="caption-style2">
+                <span style="font-weight:bolder;font-size: 30px;">OIL AND GAS</span> <br>
+                Utilize our vast expertise to take your business further than you ever thought possible.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../Sample-Project2/Image/soft.jpg" class="img-styling">
+             
+            <div class="carousel-caption" style="position: absolute;right: 3%;bottom: 20px;left: 3%; z-index: 10;padding-top: 20px;padding-bottom:20px;color: #fff;text-align: center;">
+                <p class="caption-style2">
+                <span style="font-weight:bolder; font-size:30px;">SOFTWARE DEVELOPMENT</span> <br>
+                    We design custom software for many different industries. let us build a custom solution for your business!</p>
+            </div>
+        </div>
+    <div class="carousel-item">
+    <img src="../Sample-Project2/Image/train3.jpg" class="img-styling">
+     
+    <div class="carousel-caption" style="position: absolute;right: 3%;bottom: 20px;left: 3%; z-index: 10;padding-top: 20px;padding-bottom:20px;color: #fff;text-align: center;">
+    <p class="caption-style2">
+    <span style="font-weight:bolder; font-size:30px;">TRAINING</span> <br>
+    From accommodations to logistics, we can handle every aspect of training for your organization.</p>
+    </div>
+</div>
+    </div>
+    <a class="carousel-control-prev" href="#banner" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#banner" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<!--Banner ends here-->
+</div>
+
+<!-- Main section starts here-->
+<div class="container-fluid" id="section1">
+    <div class="row" id="section-prod">
+        <div class="col-sm-4 protext">
+            <h5 class="proheadingtext">Cradle Solution Division</h5>
+            <p class="propara">We provide custom application software, and provide detailed technical training for the Oil and Gas industry.</p>
+            <p class="propara" id="collapse">We were recognized in 2013 by Inc. Magazine as the 573rd fastest-growing company in the United States. We continue to
+            demonstrate that large results can come from a close-knit team working together.</p>
+            <a href="#collapse" class="nav-toggle readmore">Read More</a>
+             <script>
+                $(document).ready(function () {
+                    $('.nav-toggle').click(function () {
+                        var collapse_content_selector = $(this).attr('href');
+                        var toggle_switch = $(this);
+                        $(collapse_content_selector).toggle(function () {
+                            if ($(this).css('display') == 'none') {
+                                toggle_switch.html('Read More');
+                            } else {
+                                toggle_switch.html('Read Less');
+                            }
+                        });
+                    });
+
+                });
+            </script>
+
+        </div>
+        <div class="col-sm-4 protext2">
+            <h5 class="proheadingtext">What We do</h5>
+            <img src="../Sample-Project2/Image/bck2.jpeg" alt="" style="width:100%;">
+            <h6 class="proheadingtext">We offer the following Services</h6>
+            <h6 class="propara"><strong>Consulting </strong></h6>
+            <p class="propara">We help our customers to leverage on our experienced resources to handle the design and implementation of an
+            enterprise-wide IT Governance Framework.</p>
+            <h6 class="propara"><strong>Oil and Gas</strong> </h6> 
+            <p class="propara">Utilize our vast expertise to take your business further than you ever thought possible.</p>
+   <h6 class="propara"><strong>Custom Software</strong></h6>
+   <p class="propara" id="collapse2">We design custom software for many industries, let us build a custom software for your business!</p>
+    <a href="#collapse2" class="nav-toggle readmore">Read More</a>
+
+    
+    
+        </div>
+        <div class="col-sm-4 protext2">
+            <h5 class="proheadingtext" id="mission">Our Mission</h5>
+    <img src="../Sample-Project2/Image/bck3.jpeg" alt="" style="width:100%;">
+            <h6 class="proheadingtext">Our missions are</h6>
+            <p class="propara" >To be a software solution hub across the globe providing custom softwares to our dear users and making everything easy
+            for them.</p>
+            <p class="propara" id="collapse3">Utilize our vast expertise to take your business further than you ever thought possible.</p>
+            <a href="#collapse3" class="nav-toggle readmore">Read More</a>
+            
+        </div>
+        </div>
+    </div>
+</div>
+<!--main section ends here-->
+
+<!-- Product we offer section-->
+<h3 style="padding-top: 20px;">Product We Offer</h3>
+    <div class="container-fluid">  
+        <div class="row" id="section-prod">
+            <div class="col-sm-4 protext">
+            <h4 class="proheadingtext">Cradle Hive</h4>
+            <h6 class="propara">Enterprise Space Management</h6>
+            <p class="propara">Cradle Hive is a purpose-built tool that allows companies to visualize and manage employee seating and asset placement.</p>
+            <p class="propara">Hive allows anyone in the company to see a quick overview of the floor plan, with other employees and office equipment
+            clearly marked.</p>
+            <p class="propara">Managers can move employee seating or assets on the floor plan using an easy drag-and-drop interface, and change
+            departmental assignment in just a few clicks.</p>
+            <p class="propara">Click on this <a href="https://vimeo.com/123638879" target="_blank" style="color:#2077b5 !important; text-decoration:none;">Link</a> for more info.</p>
+            </div>
+            <div class="col-sm-4 protext2" >
+            <h4 class="proheadingtext">CradleMRx</h4>
+            <h6 class="propara">EHR (Electronic Health Records) for Home Health</h6>
+            <img src="../Sample-Project2/Image/cradlemrx.png" alt="cradlemrx" style="width:100% ;">
+            <p class="propara">CradleMRx serves the specialized needs of home health professionals by providing web-based point-of-contact information
+            entry and management. It integrates HIPAA-compliant security features and compliance with billing, reporting, and full
+            administration and management of patient information. Since the software is web-based, updates are constantly provided
+            without additional cost.</p>
+            </div>
+            <div class="col-sm-4 protext">
+            <h4 class="proheadingtext">Student Management System</h4>
+            <h6 class="propara">Student Management</h6>
+            <img src="../Sample-Project2/Image/student-manage.jpg" alt="sms" style="width:100%;">
+            <p class="propara">West Africa Management Services (WAMS) manages scholarship funds and assists hundreds of students every year who are
+            sponsored by various multinational companies to study abroad in the United States.</p>
+
+            <p class="propara">WAMS first asked us for a custom, modern, content managed website, followed by a custom software offering to be able to
+            manage their intricate and constantly changing day to day dealings with regards to students, scholarships,
+            registrations, grades, immigration issues, travel, insurance, housing, food stipends, sponsors, universities and other
+            vendor interactions.</p>
+            
+            <p class="propara">To see how our expertise can serve you, contact us today!</p>
+            </div>
+        </div>
+    </div>
+
+<!--Product we offer ends here-->
+&nbsp; 
+<div class="container"  style="padding-top: 40px; padding-bottom:45px;">
+    <h3 style="padding-bottom: 30px">Our Clients</h3>
+    <marquee behavior="scroll" direction="left">
+    <img class="img-fluid client img-responsive" src="../Sample-Project/image/nnpc.jpeg" alt="nnpc"  width="100">
+    <img class="img-fluid client img-responsive" src="../Sample-Project/image/npdc.jpeg" alt="npdc"  width="100">
+    <img class="img-fluid client img-responsive"  src="../Sample-Project/image/conoil.jpeg" alt="conoil" width="100">
+    <img class="img-fluid client img-responsive" src="../Sample-Project/image/total.png" alt="total"  width="100">
+    <img class="img-fluid client img-responsive" src="../Sample-Project/image/shell.png" alt="shell"  width="100">
+    </marquee>
+</div>
+
+    <h3 style="padding-bottom: 20px;">Sign Up For NewsLetter?</h3>
+<!--News letter starts here-->
+<div class="bg-light text-center text-lg-start" style="background-color:#505AC9 !important ;" id="section">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0 " style="margin-left: 320px ; height: 124px; margin-bottom: -42px;">
+        <form action="">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-auto mb-4 mb-md-0">
+                   
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-5 col-12 mb-4 mb-md-0">
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="newsletter" class="form-control" placeholder="Enter your email" />
+                    </div>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-auto mb-4 mb-md-0">
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary mb-4">
+                        Subscribe
+                    </button>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            </form>
+        </div>
+            <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+<!--News Letter ends here-->
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom d-lg-block">
+    </section>
+    <!-- Section: Links  -->
+
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-adj">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3 text-secondary text-adj"></i>CRADLE SOLUTION INC.
+                    </h6>
+                    <p>
+                        Craddle Solution is a consulting and software development company which majorly consult and provide
+                        custom software for oil and gas company and health sector.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footstyle footer">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4 ">
+                        Company
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset foot">Story</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset foot">Career</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset foot">News Room</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset foot" >CSR</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset foot">Trust Center</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset foot">Event</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 footstyle footer" style="margin-left: -25px !important;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4 ">
+                        Business
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset foot">Small & Medium Ent.</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset foot">Corporate Solution</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset foot">Developer Tool</a>
+                    </p>
+                
+                </div>
+                <!-- Grid column -->
+<!-- Grid column -->
+<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 footstyle footer"> 
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold mb-4 ">
+        Support
+    </h6>
+    <p>
+        <a href="#!" class="text-reset foot">Schedule a demo</a>
+    </p>
+    <p>
+        <a href="#!" class="text-reset foot">Join Community</a>
+    </p>
+    <p>
+        <a href="#!" class="text-reset foot">FAQS</a>
+    </p>
+    <p>
+        <a href="#!" class="text-reset foot">Complaints</a>
+    </p>
+
+</div>
+<!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 footstyle">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fa fa-home me-3 text-secondary foot footer"></i><span>16000 Park Ten Pl Ste 501, <span style="margin-left:34px;"> Houston, TX 77084, US. </span></p>
+                    <p>
+                        <i class="fa fa-envelope me-3 text-secondary foot">
+                    </i> <span>info@cradlesolution.com </span>
+                    </p>
+                    <p><i class="fa fa-phone me-3 text-secondary foot"> </i><span>+1 713-776-8510</span></p> 
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fa fa-facebook-f  Social"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fa fa-twitter Social"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fa fa-instagram Social" ></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fa fa-linkedin Social" ></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fa fa-github Social" ></i>
+                    </a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4 foot" style="background-color: #17a2b8; color:white;">
+        Copyright ©2022 Cradle Solution Inc. All rights reserved.
+        <a href="#">|Privacy|</a>
+        <a href="#">|Terms and Condition|</a>
+        <a href="#">|Careers|</a>
+        <a href="../Sample-Project2/pages/contact.html">|Contact|</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+</html>
